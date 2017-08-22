@@ -1,0 +1,14 @@
+{
+  "name": "reactjs-basics-academind",
+  "version": "1.0.0",
+  "description": "react app from scratch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reactjs"
+  ],
+  "author": "David Maurer",
+  "license": "MIT"
+}
