@@ -5,10 +5,6 @@ import { Home } from './components/Home';
 
 class App extends React.Component {
   render() {
-    let user = {
-      name: "Mary",
-      hobbies: ["Disc Golf"]
-    };
     return (
       <div className="container">
         <div className="row">
@@ -18,9 +14,7 @@ class App extends React.Component {
         </div>
         <div className="row">
           <div className="col-xs-10 col-xs-offset-1">
-            <Home name={ "David" } age={ 48 } user={ user }>
-              <p>This is a passed value without passing properties</p>
-            </Home>
+            <Home name={ "David" } age={ 48 } />
           </div>
         </div>
       </div>
