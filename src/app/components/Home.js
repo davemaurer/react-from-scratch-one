@@ -5,7 +5,8 @@ export class Home extends React.Component {
   constructor(props) {
     super();
     this.state = {
-      age: props.initialAge
+      age: props.initialAge,
+      homeLink: "to be changed by user"
     }
   }
 
@@ -21,6 +22,10 @@ export class Home extends React.Component {
     })
   }
 
+  onChangeLinkName() {
+    this.props.changeLink(this.state.homeLink);
+  }
+
   render() {
     return(
       <div>
@@ -31,6 +36,8 @@ export class Home extends React.Component {
         <button onClick={() => this.onMakeOlder()} className="btn btn-primary">Make me older</button>
         <hr/>
         <button onClick={() => this.onResetAge()} className="btn btn-primary">Reset my age</button>
+        <hr/>
+        <button onClick={() => this.onChangeLinkName()} className="btn btn-primary">Change Home Link Name</button>
       </div>
     )
   }
