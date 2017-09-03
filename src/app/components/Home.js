@@ -12,7 +12,13 @@ export class Home extends React.Component {
   onMakeOlder() {
     this.setState({
       age: this.state.age + 3
-    });
+    })
+  }
+
+  onResetAge() {
+    this.setState({
+      age: this.props.initialAge
+    })
   }
 
   render() {
@@ -22,6 +28,8 @@ export class Home extends React.Component {
         <p>Your name is {this.props.name} and you are {this.state.age} years old.</p>
         <hr/>
         <button onClick={() => this.onMakeOlder()} className="btn btn-primary">Make me older</button>
+        <hr/>
+        <button onClick={() => this.onResetAge()} className="btn btn-primary">Reset my age</button>
       </div>
     )
   }
