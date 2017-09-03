@@ -26,6 +26,8 @@ export class Home extends React.Component {
       <div>
         <p>Your name is {this.props.name} and you are {this.state.age} years old.</p>
         <hr/>
+        <button onClick={this.props.greet} className="btn btn-primary">Greet</button>
+        <hr/>
         <button onClick={() => this.onMakeOlder()} className="btn btn-primary">Make me older</button>
         <hr/>
         <button onClick={() => this.onResetAge()} className="btn btn-primary">Reset my age</button>
@@ -37,4 +39,5 @@ export class Home extends React.Component {
 Home.propTypes = {
   name: PropTypes.string,
   initialAge: PropTypes.number,
+  greet: PropTypes.func
 };
