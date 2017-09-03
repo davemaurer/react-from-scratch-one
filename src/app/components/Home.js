@@ -24,7 +24,6 @@ export class Home extends React.Component {
   render() {
     return(
       <div>
-        <p>Home Component</p>
         <p>Your name is {this.props.name} and you are {this.state.age} years old.</p>
         <hr/>
         <button onClick={() => this.onMakeOlder()} className="btn btn-primary">Make me older</button>
