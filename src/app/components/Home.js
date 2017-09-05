@@ -7,7 +7,37 @@ export class Home extends React.Component {
     this.state = {
       age: props.initialAge,
       homeLink: props.initialHomeLinkName
-    }
+    };
+    console.log("Constructor");
+  }
+
+  componentWillMount() {
+    console.log("component will mount");
+  }
+
+  componentDidMount() {
+    console.log("component did mount");
+  }
+
+  componentWillReceiveProps() {
+    console.log("component will receive props", nextProps);
+  }
+
+  shouldComponentUpdate(nextProps, nextState) {
+    console.log("shoudl component update", nextProps, nextState);
+    return true;
+  }
+
+  componentWillUpdate(nextProps, nextState) {
+    console.log("component will update", nextProps, nextState);
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    console.log("component did update", prevProps, prevState);
+  }
+
+  componentWillUnmount() {
+    console.log("component will unmount");
   }
 
   onMakeOlder() {
