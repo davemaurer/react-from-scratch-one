@@ -19,7 +19,7 @@ export class Home extends React.Component {
     console.log("component did mount");
   }
 
-  componentWillReceiveProps() {
+  componentWillReceiveProps(nextProps) {
     console.log("component will receive props", nextProps);
   }
 

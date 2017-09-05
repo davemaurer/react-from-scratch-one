@@ -54,6 +54,12 @@ class App extends React.Component {
             {homeCmp}
           </div>
         </div>
+        <hr/>
+        <div className="row">
+          <div className="col-xs-10 col-xs-offset-1">
+            <button onClick={this.onChangeHomeMounted.bind(this)} className="btn btn-primary">Toggle Home Component Mounted State</button>
+          </div>
+        </div>
       </div>
     )
   }
