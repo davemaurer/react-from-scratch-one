@@ -2,6 +2,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Header } from './components/Header';
 import { Home } from './components/Home';
+import { Router, Route} from 'react-router';
 
 class App extends React.Component {
   constructor() {
